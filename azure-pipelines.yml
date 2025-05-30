@@ -7,15 +7,15 @@ trigger:
 - master
 
 pool:
-  name: default
+  name: Default
 
 steps:
-- script:echo MyMavenApp
-  displayName:'This is echo'
-- script:mvn clean install
-  displayName:'Maven is running'
-- script:java -jar target/Maven_App-1.0-SNAPSHOT.jar
-  displayName:'This is my file'
+- script: echo MyMavenApp
+  displayName: 'This is echo'
+- script: mvn clean install
+  displayName: 'Maven is running'
+- script: java -jar target/Maven_App-1.0-SNAPSHOT.jar
+  displayName: 'This is my file'
 
 
 
